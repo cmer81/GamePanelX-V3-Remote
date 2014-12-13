@@ -56,7 +56,7 @@ gpx_checkreq () {
 
 	# Check GCC Compiler
 	if [[ ! -f /usr/bin/make && ! -f /usr/local/bin/make && ! -f /bin/make ]]; then
-	    yum_cmd="gcc kernel-headers make"
+	    yum_cmd="gcc kernel-headers make wget"
 	    apt_cmd="build-essential"
 	    gentoo_cmd="sys-devel/gcc"
 	elif [[ ! -f /usr/bin/gcc && ! -f /usr/local/bin/gcc && ! -f /bin/gcc ]]; then
